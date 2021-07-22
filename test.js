@@ -7,12 +7,9 @@ const Lang = Language.getString('wallpaper');
 
 Asena.addCommand({pattern: 'ravana', fromMe: false, desc: Lang.WP}, (async (message, match) => {
 
-  var image = await axios.get (Config.MENU_LOGO, {responseType: 'arraybuffer'})
+  var image = await axios.get ('Config.MENU_LOGO', {responseType: 'arraybuffer'})
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.MENUTEXT})
-
-
-*╔═▣═══❖⦁⦁⦁💢⦁⦁⦁❖═══▣═╗*\n*RAVANA BOT MENU*\n'+Config.MENUTEXT+'\n*╚═══❖═══▣ ▣════❖═══╝*
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption:*╔═▣═══❖⦁⦁⦁💢⦁⦁⦁❖═══▣═╗*\n*RAVANA BOT MENU*\n'+Config.MENUTEXT+'\n*╚═══❖═══▣ ▣════❖═══╝*
 
 
 ※‗‗‗‗‗‗‗*Media commands*‗‗‗‗‗‗‗‗※
