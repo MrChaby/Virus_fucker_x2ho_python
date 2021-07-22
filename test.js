@@ -1,11 +1,9 @@
 const Asena = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
+const Config = require('../config');
 
-const Language = require('../language');
-const Lang = Language.getString('wallpaper');
-
-Asena.addCommand({pattern: 'ravana', fromMe: false, desc: Lang.WP}, (async (message, match) => {
+Asena.addCommand({pattern: 'ravana', fromMe: false,dontAddCommandList: true }, (async (message, match) => {
 
   var image = await axios.get ('Config.MENU_LOGO', {responseType: 'arraybuffer'})
 
@@ -14,7 +12,7 @@ Asena.addCommand({pattern: 'ravana', fromMe: false, desc: Lang.WP}, (async (mess
 
 ※‗‗‗‗‗‗‗*Media commands*‗‗‗‗‗‗‗‗※
 
-🔰𝘾𝙤𝙢𝙢𝙖𝙣𝙙➜ .song <පෙළow>
+🔰𝘾𝙤𝙢𝙢𝙖𝙣𝙙➜ .song <song name>
 🔹𝙐𝙨𝙚➜ ඔබ වෙනුවෙන් ගීතය බාගත කරයි..
 
 🔰𝘾𝙤𝙢𝙢𝙖𝙣𝙙➜ .video <yt link>
